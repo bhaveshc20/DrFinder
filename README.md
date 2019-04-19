@@ -31,15 +31,19 @@ npm install
 npm run build
 ```
 
-<p>Open another tab</p>
+Open another tab
+
 ```
 npm start
 ```
 
 <p>Type localhost:8000 in your browser to test the app</p>
 
-##Time Taken
+
+## Time Taken
+
 <p>~3 Hours (Including setting up the express server and installing dependencies)
 
 ## Feedback
+
 In case you have any feedback or questions, feel free to open a new issues on this repo or reach out to me [**@bhaveshc20**](https://github.com/bhaveshc20) on Github.
