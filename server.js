@@ -40,7 +40,7 @@ app.get('/api/findDoctors/:specialtyName/:area/:rating', (req, res) => {
     "term": req.params.specialtyName,
     "location": req.params.area
   };
-  console.log(searchRequest);
+  // console.log(searchRequest);
   client.search(searchRequest).then(response => {
     const allDoctors = response.jsonBody.businesses.filter((doctor) => (doctor.rating >= req.params.rating));
     res.json(allDoctors);
