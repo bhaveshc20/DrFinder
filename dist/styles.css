@@ -1,6 +1,21 @@
+@font-face {
+  font-family: psans-bold;
+  src: url('./fonts/ps-bold.ttf');
+}
+
+@font-face {
+  font-family: psans-reg;
+  src: url('./fonts/ps-reg.ttf');
+}
+
+
 body {
   margin: 0;
+  font-family: psans-reg;
   color: #333;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: psans-bold;
 }
 a {
   text-decoration: none;
@@ -12,7 +27,6 @@ a {
 address{
   font-style: normal;
 }
-
 .header {
   width: 100%;
   position: fixed;
@@ -23,7 +37,12 @@ address{
   width: 660px;
   margin: auto;
 }
-
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3EA1F5 !important;
+}
 .dropdown{
   display: flex;
   align-items: center;
@@ -57,8 +76,9 @@ input.filter-item {
   display: block;
   color: #fff;
 }
-
-
+.form-input>span{
+  margin:0 10px;
+}
 .main {
   margin-top: 82px;
   margin-bottom: 30px;
@@ -69,15 +89,11 @@ input.filter-item {
   margin: auto;
   text-align: center;
 }
-
-
 .list, .detail {
   width: 720px;
   padding: 15px;
   margin: auto;
 }
-
-
 .list-item {
   display: flex;
   align-items: center;
@@ -126,12 +142,9 @@ input.filter-item {
 .list-address > p{
   margin: 3px 0;
 }
-
 .address-header{
   font-weight: bold;
 }
-
-
 .detail.list-photo-box {
   width: 200px;
   height: 200px;
@@ -188,7 +201,13 @@ input.filter-item {
   height: 260px;
   background-color: #bababa;
 }
-
+.detail-address{
+  margin: 8px 0;
+}
+.detail-address>p{
+  margin: 4px 0;
+  font-size: 0.9em;
+}
 .detail-bio {
   width: 300px;
   height: 100%;
@@ -208,7 +227,6 @@ input.filter-item {
   height: 100%;
   object-fit: cover;
 }
-
 .footer {
   background-color: #bababa;
   width: 100%;
