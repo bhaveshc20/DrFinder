@@ -4,6 +4,10 @@
 </a>
 </p>
 
+<p align="center">
+<a href="https://warm-woodland-80978.herokuapp.com/">Try it out!</a>
+</p>
+
 
 ## What is Dr.?
 
